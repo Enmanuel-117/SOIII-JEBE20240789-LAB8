@@ -1,0 +1,12 @@
+sudo apt update && sudo apt install -y docker.io
+docker --version
+https://hub.docker.com (Para imágenes)
+sudo docker pull nginx
+sudo docker images
+sudo systemctl status apache2
+sudo systemctl stop apache2
+ifconfig | grep inet
+sudo mkdir -p /home/website
+docker run run -d --name my_nginx -p 8888:80 -v /home/website:/usr/share/nginx nginx
+docker ps
+sudo nano /home/website/index.html
